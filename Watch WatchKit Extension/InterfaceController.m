@@ -19,6 +19,8 @@
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
     NSLog(@"%@ awakeWithContext", self);
+    [self.table setRowTypes:@[@"table"]];
+    [self.table setNumberOfRows:3 withRowType:@"table"];
 
     // Configure interface objects here.
 }
@@ -26,6 +28,7 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    
     NSLog(@"%@ willactive", self);
 
 }
@@ -40,6 +43,16 @@
     [WKInterfaceController openParentApplication:@{@"color":color} reply:^(NSDictionary *replyInfo, NSError *error) {
         NSLog(@"reply===%@",replyInfo);
     }];
+}
+
+- (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex
+{
+    NSLog(@"select %ld",rowIndex);
+}
+
+- (IBAction)greenColor {
+    [self openAppWithColor:@"red"];
+
 }
 
 - (IBAction)redColor {

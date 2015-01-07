@@ -22,6 +22,7 @@
 		F727A2D51A53F41E00EB2935 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F727A2D31A53F41E00EB2935 /* Interface.storyboard */; };
 		F727A2D71A53F41E00EB2935 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F727A2D61A53F41E00EB2935 /* Images.xcassets */; };
 		F727A2DA1A53F41E00EB2935 /* Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F727A2BA1A53F41E00EB2935 /* Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F7C018D81A5D254E0010AA49 /* RowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C018D71A5D254E0010AA49 /* RowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		F727A2D21A53F41E00EB2935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F727A2D41A53F41E00EB2935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		F727A2D61A53F41E00EB2935 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F7C018D61A5D254E0010AA49 /* RowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowController.h; sourceTree = "<group>"; };
+		F7C018D71A5D254E0010AA49 /* RowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +188,8 @@
 			children = (
 				F727A2BF1A53F41E00EB2935 /* InterfaceController.h */,
 				F727A2C01A53F41E00EB2935 /* InterfaceController.m */,
+				F7C018D61A5D254E0010AA49 /* RowController.h */,
+				F7C018D71A5D254E0010AA49 /* RowController.m */,
 				F727A2C21A53F41E00EB2935 /* NotificationController.h */,
 				F727A2C31A53F41E00EB2935 /* NotificationController.m */,
 				F727A2C51A53F41E00EB2935 /* GlanceController.h */,
@@ -403,6 +408,7 @@
 			files = (
 				F727A2C41A53F41E00EB2935 /* NotificationController.m in Sources */,
 				F727A2C11A53F41E00EB2935 /* InterfaceController.m in Sources */,
+				F7C018D81A5D254E0010AA49 /* RowController.m in Sources */,
 				F727A2C71A53F41E00EB2935 /* GlanceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,15 +10,27 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <group width="1" height="1" alignment="left" id="qdR-8s-nlI">
+                        <group width="1" alignment="left" id="qdR-8s-nlI">
                             <items>
                                 <button alignment="center" title="Button" id="kck-Mu-5CT">
                                     <connections>
+                                        <action selector="greenColor" destination="AgC-eL-Hgc" id="5mm-5R-1jf"/>
                                         <segue destination="afE-ak-80i" kind="modal" id="WgB-pG-Tuy"/>
                                     </connections>
                                 </button>
                             </items>
                         </group>
+                        <table alignment="left" id="AO2-MO-2oF">
+                            <items>
+                                <tableRow identifier="table" id="YE5-w3-QMm" customClass="RowController">
+                                    <group key="rootItem" width="1" alignment="left" id="RNe-Ad-fWv">
+                                        <items>
+                                            <switch width="1" alignment="left" value="YES" title="Switch" id="svM-tv-Rxy"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
                     <menu key="menu" id="Bxc-dH-Bgq">
                         <items>
@@ -30,9 +42,14 @@
                             <menuItem title="Menu Item" icon="block" id="mhA-fq-FqU" userLabel="block"/>
                         </items>
                     </menu>
+                    <connections>
+                        <outlet property="green" destination="kck-Mu-5CT" id="LIr-Hr-Lqw"/>
+                        <outlet property="table" destination="AO2-MO-2oF" id="BhK-UP-glk"/>
+                        <segue destination="afE-ak-80i" kind="relationship" relationship="nextPage" id="udh-QJ-XUX"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="347"/>
+            <point key="canvasLocation" x="220" y="348"/>
         </scene>
         <!--id-->
         <scene sceneID="CCP-DP-yae">
@@ -92,4 +109,7 @@
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="WgB-pG-Tuy"/>
+    </inferredMetricsTieBreakers>
 </document>

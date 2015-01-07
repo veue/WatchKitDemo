@@ -13,12 +13,17 @@
 
 @property (weak, nonatomic) IBOutlet WKInterfaceButton *red;
 
+@property (weak, nonatomic) IBOutlet WKInterfaceButton *green;
+- (IBAction)greenColor;
 
 - (IBAction)redColor;
 
 - (IBAction)action1;
 
 - (IBAction)shareAction;
+
+
+@property (weak, nonatomic) IBOutlet WKInterfaceTable *table;
 
 
 @end
