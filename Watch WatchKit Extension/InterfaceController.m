@@ -51,7 +51,9 @@
 }
 
 - (IBAction)greenColor {
-    [self openAppWithColor:@"red"];
+    [self presentTextInputControllerWithSuggestions:@[@"aaa",@"bbb"] allowedInputMode:WKTextInputModeAllowAnimatedEmoji completion:^(NSArray *results) {
+        NSLog(@"%@",results);
+    }];
 
 }
 

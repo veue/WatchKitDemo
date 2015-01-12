@@ -15,7 +15,6 @@
                                 <button alignment="center" title="Button" id="kck-Mu-5CT">
                                     <connections>
                                         <action selector="greenColor" destination="AgC-eL-Hgc" id="5mm-5R-1jf"/>
-                                        <segue destination="afE-ak-80i" kind="modal" id="WgB-pG-Tuy"/>
                                     </connections>
                                 </button>
                             </items>
@@ -109,7 +108,4 @@
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="WgB-pG-Tuy"/>
-    </inferredMetricsTieBreakers>
 </document>

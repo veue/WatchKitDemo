@@ -21,7 +21,9 @@
     if (self){
         // Initialize variables here.
         // Configure interface objects here.
-        
+        [self.customLabel setText:@"testtesttesttesttesttesttesttesttesttest"];
+        [self.customLabel setTextColor:[UIColor yellowColor]];
+
     }
     return self;
 }
@@ -55,8 +57,6 @@
     //
     // After populating your dynamic notification interface call the completion block.
     NSLog(@"%@",remoteNotification);
-    [self.customLabel setText:@"testtesttesttesttesttesttesttesttesttest"];
-    [self.customLabel setTextColor:[UIColor yellowColor]];
     
     
     completionHandler(WKUserNotificationInterfaceTypeCustom);
